@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Store.Web2
+namespace Store.Web
 {
     public class Startup
     {
@@ -25,7 +25,7 @@ namespace Store.Web2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddSingleton<IBookRepository, BookRepozitory>();
+            services.AddSingleton<IBookRepository, BookRepository>();
             services.AddSingleton<BookService>();
         }
 
